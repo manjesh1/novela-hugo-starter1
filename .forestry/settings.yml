@@ -4,6 +4,13 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: directory
+  path: layouts/icons/ui/logo.html
+  label: Logo
+  create: all
+  match: "**/*"
+  templates:
+  - home
 - type: heading
   label: Content
 - type: document
